@@ -341,7 +341,6 @@ app.get("/weather", async (req, res) => {
     return res.status(500).json({ error: "Server error during weather fetch" });
   }
 });
-
 // Start server
 app.listen(PORT, () =>
   console.log(`Server running at http://localhost:${PORT}`)
